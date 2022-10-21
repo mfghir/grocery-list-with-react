@@ -1,13 +1,139 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex-direction: column;
+  background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.container {
+  width: 40%;
+  padding: 30px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+
+  margin: 100px 0;
+  border-radius: 10px;
+  background: rgb(226, 226, 226);
+}
+
+.grocery-container {
+  width: 100%;
+}
+
+.clear-btn {
+  outline: none;
+  border: 1px solid #d22b2b;
+  padding: 5px 0;
+
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .4s;
+
+  color: #d22b2b;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.grocery-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  margin: 30px 0;
+}
+
+.grocery-form input {
+  outline: none;
+  border: 2px solid #c2c2c2;
+  border-radius: 10px;
+
+  padding: 5px;
+  width: 70%;
+}
+
+.submit-btn {
+  outline: none;
+  border: none;
+  padding: 5px 30px;
+
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .4s;
+
+  background: #4169e1;
+  color: #fff;
+}
+
+.submit-btn:hover {
+  background: #fff;
+  color: #4169e1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.grocery-item {
+  width: 100%;
+  height: 20px;
+  margin-bottom: 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btns button {
+  outline: none;
+  border: none;
+  background: none;
+
+  font-size: 20px;
+}
+
+.btns button svg {
+  cursor: pointer;
+}
+
+.edit-btn svg {
+  margin-right: 10px;
+  color: #43aa26;
+}
+
+.delete-btn svg {
+  color: #d22b2b;
 }
